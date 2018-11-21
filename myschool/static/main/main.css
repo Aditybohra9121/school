@@ -1,0 +1,61 @@
+body,header{
+    padding: 0px;
+    margin: 0%;
+    font-family: sans-serif;
+    
+    font-weight: 700;
+    font-size: 22px;
+}
+body{
+    background:white;
+}
+header{
+    color: white;
+    height: 60px;
+    background:rgb(5, 64, 71)
+}
+main{
+    margin:30px;
+}
+div.logo{
+    padding: 20px;
+    width: 20%; 
+    float: left;
+}
+h1{
+    margin: 10px;
+    font-weight: 500;
+    font-size: 35px;
+}
+section#add_student_form{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.addStudent{
+    margin-left: 34%;
+}
+ul#header-nav{
+    list-style: none;
+    display: block;
+    float:right;
+    padding-left: 0%;
+    margin-bottom: 0%;
+    padding: 10px;
+    padding-top: 14px;
+    height: 100%;
+    font-weight: 300;
+
+}
+#header-nav li{
+    display: inline;
+    height: 59px;;
+
+
+}
+a{
+    text-decoration: none;  
+    padding: 15px;
+}
+a:hover{
+    background: rgb(31, 125, 136)
+}

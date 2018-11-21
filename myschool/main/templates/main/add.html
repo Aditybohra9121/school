@@ -1,0 +1,35 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'main/main.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <title>Students</title>
+    
+</head>
+<body>
+    <header>
+    <div class='logo'>
+        School
+        </div>
+        <ul id="header-nav">
+            <li><a href="/index/">Students</a></li>
+            <li><a href="/add/">Add New</a></li>
+        </ul>
+    </header>
+    <main class="container-fluid">
+    <div class="addStudent">
+        <h2>Add New Student</h2>
+        <section id="add_student_form">
+        <form method="POST">
+        <div class="form-group">
+            {% csrf_token %}
+            {{form.as_p}}
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-left:30%">Submit</button>
+            </form>
+        </section>
+    </div>
+    </main>
